@@ -1,7 +1,7 @@
 # OmTegar's Homepage
 
 [https://www.om-tegar-site.vercel.app/](https://om-tegar-site.vercel.app/)
-https://react-icons.github.io/react-icons/
+<!-- https://react-icons.github.io/react-icons/ -->
 
 ![OmTegar](/thumbnail.png)
 
