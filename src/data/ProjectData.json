@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Arve's Personal Site",
+    "description": "Websitenya bilal dah",
+    "technology": "NextJS",
+    "image": "../projects/bilal-arve.webp",
+    "link": "https://bilal-arve.netlify.app/"
+  },
+  {
+    "title": "Arve's Personal Site",
+    "description": "Websitenya bilal dah",
+    "technology": "AWS",
+    "image": "../projects/bilal-arve.webp",
+    "link": "https://bilal-arve.netlify.app/"
+  },
+  {
+    "title": "Sosiotech",
+    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
+    "technology": "HTML",
+    "image": "../projects/sosiotech.webp",
+    "link": "https://sisotech.netlify.app/"
+  },
+  {
+    "title": "Old Personal Site",
+    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
+    "technology": "ReactJS",
+    "image": "../projects/old-personal-site.webp",
+    "link": "https://wiscaksono-github-pj8mlew0c-wiscaksono.vercel.app/"
+  },
+  {
+    "title": "Confab Virtual Conferences",
+    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
+    "technology": "NextJS",
+    "image": "../projects/confab.webp",
+    "link": "https://confab-omega.vercel.app/"
+  },
+  {
+    "title": "News Site",
+    "description": "iseng ae pak",
+    "technology": "ReactJS",
+    "image": "../projects/news-site.webp"
+  },
+  {
+    "title": "My First Personal Site",
+    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
+    "technology": "NextJS",
+    "image": "../projects/first-personal-site.webp",
+    "link": "https://wiscaksono.vercel.app/"
+  },
+  {
+    "title": "The Deer",
+    "description": "Praesent ac rhoncus tortor. Proin et interdum libero. Vestibulum ac dui ullamcorper, porta odio sed, ornare quam. Mauris tempor molestie felis non pharetra. Donec nec nisi sit amet libero aliquam varius eu quis erat. Ut varius sagittis urna, non interdum nisl fringilla semper. Morbi tristique sodales eros quis cursus. Pellentesque in euismod lorem. Morbi facilisis nunc eu odio bibendum tempor. Nulla in orci et ante dignissim aliquam non id metus. Integer a vestibulum nunc, at placerat ex. Nam non metus placerat, laoreet ante eu, interdum magna. Nunc lacinia ipsum tortor, at malesuada massa egestas lobortis. Phasellus dictum dui justo, pretium eleifend orci posuere sit amet.",
+    "technology": "Blender",
+    "image": "../projects/the-deer.webp",
+    "link": "https://drive.google.com/file/d/1OyqNvx7T-yPSqBG8qSlrgKGrrO0CqJ21/view?usp=sharing"
+  },
+  {
+    "title": "Finsweet Landing Page",
+    "description": "Praesent ac rhoncus tortor. Proin et interdum libero. Vestibulum ac dui ullamcorper, porta odio sed, ornare quam. Mauris tempor molestie felis non pharetra. Donec nec nisi sit amet libero aliquam varius eu quis erat. Ut varius sagittis urna, non interdum nisl fringilla semper. Morbi tristique sodales eros quis cursus. Pellentesque in euismod lorem. Morbi facilisis nunc eu odio bibendum tempor. Nulla in orci et ante dignissim aliquam non id metus. Integer a vestibulum nunc, at placerat ex. Nam non metus placerat, laoreet ante eu, interdum magna. Nunc lacinia ipsum tortor, at malesuada massa egestas lobortis. Phasellus dictum dui justo, pretium eleifend orci posuere sit amet.",
+    "technology": "NextJS",
+    "image": "../projects/finsweet.webp",
+    "link": "https://finsweet-nu.vercel.app/"
+  },
+  {
+    "title": "Moon",
+    "description": "Praesent ac rhoncus tortor. Proin et interdum libero. Vestibulum ac dui ullamcorper, porta odio sed, ornare quam. Mauris tempor molestie felis non pharetra. Donec nec nisi sit amet libero aliquam varius eu quis erat. Ut varius sagittis urna, non interdum nisl fringilla semper. Morbi tristique sodales eros quis cursus. Pellentesque in euismod lorem. Morbi facilisis nunc eu odio bibendum tempor. Nulla in orci et ante dignissim aliquam non id metus. Integer a vestibulum nunc, at placerat ex. Nam non metus placerat, laoreet ante eu, interdum magna. Nunc lacinia ipsum tortor, at malesuada massa egestas lobortis. Phasellus dictum dui justo, pretium eleifend orci posuere sit amet.",
+    "technology": "Blender",
+    "image": "../projects/moon.webp",
+    "link": "https://drive.google.com/file/d/1Y-h7nYkoN1_0DGtaq41r4KVk-QGj30nA/view?usp=sharing"
+  },
+  {
+    "title": "Lonely",
+    "description": "Sendirian bae",
+    "technology": "Blender",
+    "image": "../projects/lonely.webp",
+    "link": "https://drive.google.com/file/d/1-qZj-VTDyMrU4zG-qZ89e3Pby3TLErH8/view?usp=sharing"
+  },
+  {
+    "title": "Sistem Kontrol Laboratory Site",
+    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
+    "technology": "NextJS",
+    "image": "../projects/siskon-rev.webp",
+    "link": "https://siskon-rev.vercel.app/"
+  },
+  {
+    "title": "Exit",
+    "description": "Keluar sini ye",
+    "technology": "Blender",
+    "image": "../projects/exit.webp",
+    "link": "https://drive.google.com/file/d/1ObX_XuQXoOVhIK_6CM99Lh31Dz2cT_0W/view?usp=sharing"
+  },
+  {
+    "title": "Travel Awal",
+    "description": "A travel site",
+    "technology": "NextJS",
+    "image": "../projects/travelawal.webp",
+    "link": "https://www.travelawal.com/"
+  },
+  {
+    "title": "NFT Landing Page",
+    "description": "Sliced",
+    "technology": "HTML",
+    "image": "../projects/nft-landing.webp",
+    "link": "https://nft-wisnu.netlify.app/"
+  },
+  {
+    "title": "The Chair",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus imperdiet, tempus dui vel, dictum ligula. In urna nisi, suscipit in accumsan sed, venenatis ac mi. Vivamus tempus orci ipsum, ac blandit tortor aliquet non. Vivamus laoreet diam et eros sollicitudin, eu venenatis felis placerat. Ut laoreet metus non ligula tincidunt, eget efficitur felis euismod. Sed ornare luctus porta. Phasellus urna sem, pulvinar sit amet volutpat sodales, semper dictum nunc.",
+    "technology": "Blender",
+    "image": "../projects/the-chair.webp",
+    "link": "https://drive.google.com/file/d/1KlqfDSWkwlL5n78PBD_24ACLCzYnBosL/view?usp=sharing"
+  },
+  {
+    "title": "The Portal",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus imperdiet, tempus dui vel, dictum ligula. In urna nisi, suscipit in accumsan sed, venenatis ac mi. Vivamus tempus orci ipsum, ac blandit tortor aliquet non. Vivamus laoreet diam et eros sollicitudin, eu venenatis felis placerat. Ut laoreet metus non ligula tincidunt, eget efficitur felis euismod. Sed ornare luctus porta. Phasellus urna sem, pulvinar sit amet volutpat sodales, semper dictum nunc.",
+    "technology": "Blender",
+    "image": "../projects/the-portal.webp",
+    "link": "https://drive.google.com/file/d/16mwWPNsXXwSDnxrV8KpidrdHnUTMF1KE/view?usp=sharing"
+  }
+]
