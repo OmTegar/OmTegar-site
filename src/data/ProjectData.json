@@ -55,6 +55,13 @@
     "link": "https://drive.google.com/file/d/1Y-h7nYkoN1_0DGtaq41r4KVk-QGj30nA/view?usp=sharing"
   },
   {
+    "title": "Mini Games Basics V1",
+    "description": "This is a game batu gunting kertas that I applied in the form of a website application so that it can be played in the browser",
+    "technology": "HTML",
+    "image": "../projects/game1.webp",
+    "link": "https://vercel.com/omtegar/mini-games-html-css-js-basic/HPc8JD73FWZUXF8NPgo9Cih6jMv7"
+  },
+  {
     "title": "Lonely",
     "description": "Sendirian bae",
     "technology": "Blender",
