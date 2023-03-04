@@ -1,4 +1,4 @@
-# Wisnu's Homepage
+# OmTegar's Homepage
 
 <!-- [https://www.wiscaksono.me/](https://www.wiscaksono.me/) -->
 https://react-icons.github.io/react-icons/
