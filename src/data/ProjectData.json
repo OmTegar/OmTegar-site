@@ -69,6 +69,13 @@
     "link": "https://drive.google.com/file/d/1-qZj-VTDyMrU4zG-qZ89e3Pby3TLErH8/view?usp=sharing"
   },
   {
+    "title": "React Movie Trailer",
+    "description": "this is an application where we can view the movie database and we can watch the trailers using the API from https://themoviedb.org",
+    "technology": "ReactJS",
+    "image": "../projects/react-film.webp",
+    "link": "https://react-movie-flax.vercel.app/"
+  },
+  {
     "title": "Sistem Kontrol Laboratory Site",
     "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
     "technology": "NextJS",
