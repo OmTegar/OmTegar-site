@@ -1,7 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import AboutMe from "./pages/AboutMe";
-import ContactMe from "./pages/ContactMe";
+// import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import Projects from "./pages/Projects";
@@ -16,9 +16,10 @@ export default function App() {
       return <AboutMe />;
     } else if (value === "projects") {
       return <Projects />;
-    } else if (value === "contact-me") {
-      return <ContactMe />;
-    }
+    } 
+    // else if (value === "contact-me") {
+    //   return <ContactMe />;
+    // }
   }
 
   return (
