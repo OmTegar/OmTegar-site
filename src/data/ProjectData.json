@@ -62,6 +62,13 @@
     "link": "https://mini-games-html-css-js-basic-ecru.vercel.app/"
   },
   {
+    "title": "Bootstrap studio",
+    "description": "Test Template By Bootstrap Studio",
+    "technology": "HTML",
+    "image": "../projects/bootstrap-studio.webp",
+    "link": "https://test-bootstrap-studio.vercel.app/"
+  },
+  {
     "title": "Lonely",
     "description": "Sendirian bae",
     "technology": "Blender",
