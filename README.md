@@ -1,6 +1,6 @@
 # OmTegar's Homepage
 
-<!-- [https://www.wiscaksono.me/](https://www.wiscaksono.me/) -->
+[https://www.om-tegar-site.vercel.app/](https://om-tegar-site.vercel.app/)
 https://react-icons.github.io/react-icons/
 
 ![OmTegar](/thumbnail.png)
