@@ -89,7 +89,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 </button>
               </div>
 
-              <button
+              {/* <button
                 id="border-b"
                 className={`px-5 py-4 border-l border-l-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
                   isNavbar === "contact-me"
@@ -101,7 +101,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 }}
               >
                 _contact-me
-              </button>
+              </button> */}
             </nav>
           </div>
 
@@ -172,7 +172,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 >
                   _projects
                 </button>
-                <button
+                {/* <button
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "contact-me"
                       ? "border-b-2 border-[#FEA55F] text-white"
@@ -184,7 +184,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   }}
                 >
                   _contact-me
-                </button>
+                </button> */}
               </div>
 
               <footer className="block lg:hidden">
