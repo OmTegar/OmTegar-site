@@ -1,5 +1,12 @@
 [
   {
+    "title": "OmTegar Personal Website V1",
+    "description": "My profile website first generation in 2022, now my website profile is in the second generation in 2023.",
+    "technology": "HTML",
+    "image": "../projects/personal-web-v1.webp",
+    "link": "https://my-company-profile-alpha.vercel.app/"
+  },
+  {
     "title": "Arve's Personal Site",
     "description": "Websitenya bilal dah",
     "technology": "NextJS",
@@ -7,25 +14,11 @@
     "link": "https://bilal-arve.netlify.app/"
   },
   {
-    "title": "Arve's Personal Site",
-    "description": "Websitenya bilal dah",
-    "technology": "AWS",
-    "image": "../projects/bilal-arve.webp",
-    "link": "https://bilal-arve.netlify.app/"
-  },
-  {
-    "title": "Sosiotech",
+    "title": "Sektema Company Profile",
     "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
     "technology": "HTML",
-    "image": "../projects/sosiotech.webp",
-    "link": "https://sisotech.netlify.app/"
-  },
-  {
-    "title": "Old Personal Site",
-    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
-    "technology": "ReactJS",
-    "image": "../projects/old-personal-site.webp",
-    "link": "https://wiscaksono-github-pj8mlew0c-wiscaksono.vercel.app/"
+    "image": "../projects/sektema.webp",
+    "link": "https://company-profile-sektema.vercel.app/"
   },
   {
     "title": "Confab Virtual Conferences",
@@ -36,16 +29,9 @@
   },
   {
     "title": "News Site",
-    "description": "iseng ae pak",
+    "description": "iseng ae om",
     "technology": "ReactJS",
     "image": "../projects/news-site.webp"
-  },
-  {
-    "title": "My First Personal Site",
-    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
-    "technology": "NextJS",
-    "image": "../projects/first-personal-site.webp",
-    "link": "https://wiscaksono.vercel.app/"
   },
   {
     "title": "The Deer",
