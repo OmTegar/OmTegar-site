@@ -4,7 +4,8 @@ import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrLinkedinOption } from "@react-icons/all-files/gr/GrLinkedinOption";
-import { HiExternalLink } from "@react-icons/all-files/hi/HiExternalLink";
+// import { HiExternalLink } from "@react-icons/all-files/hi/HiExternalLink";
+import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube";
 import { ImSteam } from "@react-icons/all-files/im/ImSteam";
 import { MdCall } from "@react-icons/all-files/md/MdCall";
 import { MdEmail } from "@react-icons/all-files/md/MdEmail";
@@ -221,47 +222,47 @@ function Contacts() {
         >
           <Popover.Panel className="p-4 w-full flex flex-col gap-1.5">
             <a
-              href="https://wa.me/6287885002327"
+              href="https://www.instagram.com/tega_r.dp"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
               <FiInstagram />
-              <span>amachoker</span>
+              <span>tega_r.dp</span>
             </a>
             <a
-              href="https://steamcommunity.com/id/wisnoob/"
+              href="https://steamcommunity.com/id/omtegar/"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
               <ImSteam />
-              <span>Wisnoob</span>
+              <span>tegardito02</span>
             </a>
             <a
-              href="https://wa.me/6287885002327"
+              href="https://wa.me/6281233219130"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
               <MdCall />
-              <span>+628788500232</span>
+              <span>+6281233219130</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/wiscaksono/"
+              href="https://www.linkedin.com/in/tegar-priandika-4233a7266/"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
               <GrLinkedinOption />
-              <span>Wisnu Wicaksono</span>
+              <span>tegar priandika</span>
             </a>
             <a
-              href="mailto:wiscaksono1@gmail.com"
+              href="mailto:tegardito02@gmail.com"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
             >
               <MdEmail />
-              <span>wwicaksono96@gmail.com</span>
+              <span>tegardito02@gmail.com</span>
             </a>
           </Popover.Panel>
         </Transition>
@@ -303,13 +304,13 @@ function FindMeAlso() {
         >
           <Popover.Panel className="p-4 w-full flex flex-col gap-1">
             <a
-              href="https://twitch.tv/wisnoob"
+              href="https://www.youtube.com/@TechPoisonIndonesian/"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
-              <HiExternalLink />
-              <span>Twitch</span>
+              <AiFillYoutube />
+              <span>Youtube</span>
             </a>
           </Popover.Panel>
         </Transition>
