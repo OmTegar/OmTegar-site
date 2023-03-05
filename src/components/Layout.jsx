@@ -87,6 +87,18 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 >
                   _projects
                 </button>
+                <button
+                  className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                    isNavbar === "certificate"
+                      ? "border-b-2 border-[#FEA55F] text-white"
+                      : "border-b-transparent"
+                  }`}
+                  onClick={() => {
+                    setIsNavbar("certificate");
+                  }}
+                >
+                  _certificate
+                </button>
               </div>
 
               <button

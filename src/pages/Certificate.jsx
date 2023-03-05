@@ -1,16 +1,11 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
-import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
+import { FaNetworkWired } from "@react-icons/all-files/fa/FaNetworkWired";
+import { FaCode } from "@react-icons/all-files/fa/FaCode";
+import { GiLaurelCrown } from "@react-icons/all-files/gi/GiLaurelCrown";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
-import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
-// import { RiVuejsFill } from "@react-icons/all-files/ri/RiVuejsFill";
-import { SiAngular } from "@react-icons/all-files/si/SiAngular";
-import { SiBlender } from "@react-icons/all-files/si/SiBlender";
-import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
-import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
-import datas from "../data/ProjectData.json";
+import datas from "../data/CertificateData.json";
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
@@ -30,10 +25,10 @@ export default function Projects() {
           <GoTriangleDown
             className={`${project ? "" : "-rotate-90"} transition-all`}
           />
-          <span>projects</span>
+          <span>Certificates</span>
         </button>
         <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter} projects
+          {filter} Certificates
         </div>
       </div>
 
@@ -55,68 +50,28 @@ export default function Projects() {
                   }`}
                 onClick={() => setFilter("all")}
               >
-                <BsFiles />
-                <span>All Projects</span>
+                <GiLaurelCrown />
+                <span>All Certificates</span>
               </button>
             </div>
             <div className="flex items-center gap-6 ">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "HTML" ? "text-white" : "text-[#607B96]"
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Networking" ? "text-white" : "text-[#607B96]"
                   }`}
-                onClick={() => setFilter("HTML")}
+                onClick={() => setFilter("Networking")}
               >
-                <AiFillHtml5 />
-                <span>HTML5</span>
+                <FaNetworkWired />
+                <span>Networking</span>
               </button>
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "NextJS" ? "text-white" : "text-[#607B96]"
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Programing" ? "text-white" : "text-[#607B96]"
                   }`}
-                onClick={() => setFilter("NextJS")}
+                onClick={() => setFilter("Programing")}
               >
-                <SiNextDotJs />
-                <span>NextJS</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6 ">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "ReactJS" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("ReactJS")}
-              >
-                <GrReactjs />
-                <span>ReactJS</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "AWS" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("AWS")}
-              >
-                <SiAmazonaws />
-                <span>AWS</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Angular" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("Angular")}
-              >
-                <SiAngular />
-                <span>Angular</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Blender" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("Blender")}
-              >
-                <SiBlender />
-                <span>Blender</span>
+                <FaCode />
+                <span>Programing</span>
               </button>
             </div>
           </Transition>
@@ -152,17 +107,11 @@ const Card = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function generateIcon(value) {
-    if (value.includes("NextJS")) {
-      return <SiNextDotJs />;
+    if (value.includes("Programing")) {
+      return <FaCode />;
     }
-    if (value.includes("Blender")) {
-      return <SiBlender />;
-    }
-    if (value.includes("ReactJS")) {
-      return <GrReactjs />;
-    }
-    if (value.includes("HTML")) {
-      return <AiFillHtml5 />;
+    if (value.includes("Networking")) {
+      return <FaNetworkWired />;
     }
   }
 
@@ -200,7 +149,7 @@ const Card = ({ data }) => {
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            view-project
+            view-certificate
           </motion.button>
         </div>
       </motion.div>
@@ -251,66 +200,16 @@ const Card = ({ data }) => {
                       {data.title}
                     </Dialog.Title>
                     <p className="mb-2.5 text-white/80">{data.description}</p>
-                    {/* <div className="flex items-center justify-between">
-                      {data.technology.includes("Blender") ? (
-                        <a
-                          href={data.link}
-                          target="_blank"
-                          className="text-white/80"
-                          rel="noreferrer"
-                        >
-                          Download
-                        </a>
-                      ) : (
-                        <>
-                          <a
-                            href={data.link}
-                            target="_blank"
-                            className="text-white/80"
-                            rel="noreferrer"
-                          >
-                            Demo
-                          </a>
-                          <a
-                            href={data.repo}
-                            target="_blank"
-                            className="text-white/80"
-                            rel="noreferrer"
-                          >
-                            Repo
-                          </a>
-                        </>
-                      )}
-
-                      <p className="text-white/80">
-                        Tech Stack: {data.technology}
-                      </p>
-                    </div> */}
-
                     <div className="flex items-center justify-between">
                       <div>
-                        {data.technology.includes("Blender") ? (
-                          <div className="flex items-center">
-                            <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
-                              Download
-                            </a>
-                          </div>
-                        ) : (
-                          <div className="flex items-center">
-                            <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
-                              Demo
-                            </a>
-                            <p className="text-white/80 mx-2">|</p>
-                            <div className="flex items-center">
-                              <a href={data.repo} target="_blank" className="text-white/80" rel="noreferrer">
-                                Repo
-                              </a>
-                            </div>
-                          </div>
-                        )}
+                        <div className="flex items-center">
+                          <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
+                            View In New Tab
+                          </a>
+                        </div>
                       </div>
                       <p className="text-white/80">
-                        Tech Stack: {data.technology}
+                        Certificate Type : {data.technology}
                       </p>
                     </div>
 

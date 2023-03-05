@@ -3,7 +3,6 @@ import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
-// import { RiVuejsFill } from "@react-icons/all-files/ri/RiVuejsFill";
 import { SiAngular } from "@react-icons/all-files/si/SiAngular";
 import { SiBlender } from "@react-icons/all-files/si/SiBlender";
 import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
