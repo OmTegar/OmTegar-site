@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { CopyBlock, nord } from "react-code-blocks";
 import gearData from "../data/GearData.json";
+import cerificateData from "../data/CertificateData.json";
 import { IoLogoJavascript } from "@react-icons/all-files/io5/IoLogoJavascript";
 
 export default function AboutMe() {
@@ -23,6 +24,8 @@ export default function AboutMe() {
       return <Gear closeGear={setRender} />;
     } else if (value === "work") {
       return <Work closeGear={setRender} />;
+    } else if (value === "certificate") {
+      return <Certificate closeCertificate={setRender} />;
     }
   }
 
@@ -227,9 +230,76 @@ function Gear({ closeGear }) {
   );
 }
 
+function Certificate({ closeCertificate }) {
+  function Content({ title, list }) {
+    return (
+      <div className="mb-10">
+        <h1 className="text-2xl font-medium text-white mb-5">{title}</h1>
+        <div className="pl-10">
+          <ul className="list-disc text-white/80">
+            {list.map((data, index) => {
+              return (
+                <div key={index}>
+                  <li className="font-medium text-lg text-white/90">
+                    {data.item}
+                  </li>
+                  <p className="mb-2.5">{data.desc}</p>
+                  <div className="flex gap-2.5 mb-5">
+                    {data.type?.map((data, index) => {
+                      return (
+                        <div
+                          className="text-xs bg-[#1b2b3a] py-1 px-2 rounded-full flex items-center gap-1.5 w-max "
+                          key={index}
+                        >
+                          <div className="w-1 h-1 rounded-full bg-white" />
+                          <span>{data}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      className="col-span-10 h-full flex  justify-center overflow-hidden flex-col"
+      initial={{ x: -50, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: 50, opacity: 0 }}
+    >
+      <div className="w-full">
+        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
+          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+            <button
+              className="absolute top-1/2 -translate-y-1/2 right-4"
+              onClick={() => closeCertificate("/")}
+            >
+              <AiOutlineClose />
+            </button>
+            <p>Certificate.md (preview)</p>
+          </div>
+        </div>
+      </div>
+      <div className="overflow-y-auto scrollbar-thin h-full lg:p-16 md:p-8 p-4">
+        {cerificateData.CertificateType.map((data, index) => {
+          return <Content title={data.certificate} key={index} list={data.certificateList} />;
+        })}
+        <img src="setup.jpg" alt="My personal setup" />
+      </div>
+    </motion.div>
+  );
+}
+
 function PersonalInfo({ setRender, render }) {
   const [isOpen, setIsOpen] = useState(true);
   const [isOpenBio, setIsOpenBio] = useState(true);
+  const [isOpenCertificate, setIsOpenCertificate] = useState(true);
 
   function openPopover() {
     setIsOpen(!isOpen);
@@ -237,10 +307,15 @@ function PersonalInfo({ setRender, render }) {
 
   function CollapseAll() {
     setIsOpenBio(false);
+    setIsOpenCertificate(false);
   }
 
   function openPopoverBio() {
     setIsOpenBio(!isOpenBio);
+  }
+
+  function OpenCertificate() {
+    setIsOpenCertificate(!isOpenCertificate);
   }
 
   return (
@@ -277,6 +352,7 @@ function PersonalInfo({ setRender, render }) {
         >
           <Popover.Panel className=" px-4 text-white py-4">
             <Popover.Group className={`flex flex-col gap-1.5`}>
+              
               <Popover>
                 <>
                   <Popover.Button
@@ -286,14 +362,12 @@ function PersonalInfo({ setRender, render }) {
                     onClick={openPopoverBio}
                   >
                     <HiChevronRight
-                      className={`${
-                        isOpenBio ? "rotate-90" : ""
-                      } transition-all`}
+                      className={`${isOpenBio ? "rotate-90" : ""
+                        } transition-all`}
                     />
                     <RiFolder3Fill
-                      className={`${
-                        isOpenBio ? "text-[#E99287]" : "text-[#b36d64]"
-                      } transition-colors`}
+                      className={`${isOpenBio ? "text-[#E99287]" : "text-[#b36d64]"
+                        } transition-colors`}
                     />
                     <span className="pr-5 truncate">bio</span>
                   </Popover.Button>
@@ -309,9 +383,8 @@ function PersonalInfo({ setRender, render }) {
                     className="flex flex-col"
                   >
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "my-bio" ? "text-white" : "text-[#607B96]"
-                      }`}
+                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${render === "my-bio" ? "text-white" : "text-[#607B96]"
+                        }`}
                       as="button"
                       onClick={() => setRender("my-bio")}
                     >
@@ -319,9 +392,8 @@ function PersonalInfo({ setRender, render }) {
                       <span className="truncate">personal.js</span>
                     </Popover.Panel>
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "work" ? "text-white" : "text-[#607B96]"
-                      }`}
+                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${render === "work" ? "text-white" : "text-[#607B96]"
+                        }`}
                       as="button"
                       onClick={() => setRender("work")}
                     >
@@ -329,9 +401,8 @@ function PersonalInfo({ setRender, render }) {
                       <span className="truncate">work.js</span>
                     </Popover.Panel>
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "gear" ? "text-white" : "text-[#607B96]"
-                      }`}
+                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${render === "gear" ? "text-white" : "text-[#607B96]"
+                        }`}
                       as="button"
                       onClick={() => setRender("gear")}
                     >
@@ -341,6 +412,58 @@ function PersonalInfo({ setRender, render }) {
                   </Transition>
                 </>
               </Popover>
+
+              <Popover>
+                <>
+                  <Popover.Button
+                    className={`
+                ${isOpenCertificate ? "text-white" : "text-white/50"}
+               flex items-center gap-2.5  w-full transition-colors`}
+                    onClick={OpenCertificate}
+                  >
+                    <HiChevronRight
+                      className={`${isOpenCertificate ? "rotate-90" : ""
+                        } transition-all`}
+                    />
+                    <RiFolder3Fill
+                      className={`${isOpenCertificate ? "text-[#E99287]" : "text-[#b36d64]"
+                        } transition-colors`}
+                    />
+                    <span className="pr-5 truncate">Certificate</span>
+                  </Popover.Button>
+
+                  <Transition
+                    show={isOpenCertificate}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0 -translate-y-1"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-linear duration-150"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 -translate-y-1"
+                    className="flex flex-col"
+                  >
+                    <Popover.Panel
+                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${render === "certificate" ? "text-white" : "text-[#607B96]"
+                        }`}
+                      as="button"
+                      onClick={() => setRender("certificate")}
+                    >
+                      <SiMarkdown />
+                      <span className="truncate">Certificate.md</span>
+                    </Popover.Panel>
+
+                    <Popover.Panel
+                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${render === "gear" ? "text-white" : "text-[#607B96]"
+                        }`}
+                      as="button"
+                      onClick={() => setRender("gear")}
+                    >
+                      <SiMarkdown />
+                      <span className="truncate">gear.md</span>
+                    </Popover.Panel>
+                  </Transition>
+                  </>
+                </Popover>
             </Popover.Group>
           </Popover.Panel>
         </Transition>
