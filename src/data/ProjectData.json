@@ -4,7 +4,8 @@
     "description": "My profile website first generation in 2022, now my website profile is in the second generation in 2023.",
     "technology": "HTML",
     "image": "../projects/personal-web-v1.webp",
-    "link": "https://my-company-profile-alpha.vercel.app/"
+    "link": "https://my-company-profile-alpha.vercel.app/",
+    "repo": "https://github.com/OmTegar/my-company-profile"
   },
   {
     "title": "Arve's Personal Site",
@@ -18,7 +19,8 @@
     "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
     "technology": "HTML",
     "image": "../projects/sektema.webp",
-    "link": "https://company-profile-sektema.vercel.app/"
+    "link": "https://company-profile-sektema.vercel.app/",
+    "repo" : "https://github.com/OmTegar/company-profile-sektema"
   },
   {
     "title": "Confab Virtual Conferences",
@@ -59,14 +61,16 @@
     "description": "This is a game batu gunting kertas that I applied in the form of a website application so that it can be played in the browser",
     "technology": "HTML",
     "image": "../projects/game1.webp",
-    "link": "https://mini-games-html-css-js-basic-ecru.vercel.app/"
+    "link": "https://mini-games-html-css-js-basic-ecru.vercel.app/",
+    "repo" : "https://github.com/OmTegar/mini-games-html-css-js-basic"
   },
   {
     "title": "Bootstrap studio",
     "description": "Test Template By Bootstrap Studio",
     "technology": "HTML",
     "image": "../projects/bootstrap-studio.webp",
-    "link": "https://test-bootstrap-studio.vercel.app/"
+    "link": "https://test-bootstrap-studio.vercel.app/",
+    "repo" : "https://github.com/OmTegar/test-bootstrap-studio"
   },
   {
     "title": "Lonely",
@@ -80,7 +84,8 @@
     "description": "this is an application where we can view the movie database and we can watch the trailers using the API from https://themoviedb.org",
     "technology": "ReactJS",
     "image": "../projects/react-film.webp",
-    "link": "https://react-movie-flax.vercel.app/"
+    "link": "https://react-movie-flax.vercel.app/",
+    "repo" : "https://github.com/OmTegar/react-movie.git"
   },
   {
     "title": "Sistem Kontrol Laboratory Site",

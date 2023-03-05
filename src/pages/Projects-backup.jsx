@@ -251,32 +251,63 @@ const Card = ({ data }) => {
                       {data.title}
                     </Dialog.Title>
                     <p className="mb-2.5 text-white/80">{data.description}</p>
+                    {/* <div className="flex items-center justify-between">
+                      {data.technology.includes("Blender") ? (
+                        <a
+                          href={data.link}
+                          target="_blank"
+                          className="text-white/80"
+                          rel="noreferrer"
+                        >
+                          Download
+                        </a>
+                      ) : (
+                        <>
+                          <a
+                            href={data.link}
+                            target="_blank"
+                            className="text-white/80"
+                            rel="noreferrer"
+                          >
+                            Demo
+                          </a>
+                          <a
+                            href={data.repo}
+                            target="_blank"
+                            className="text-white/80"
+                            rel="noreferrer"
+                          >
+                            Repo
+                          </a>
+                        </>
+                      )}
+
+                      <p className="text-white/80">
+                        Tech Stack: {data.technology}
+                      </p>
+                    </div> */}
+
                     <div className="flex items-center justify-between">
                       <div>
-                        {data.technology.includes("Blender") && data.link && (
+                        {data.technology.includes("Blender") ? (
                           <div className="flex items-center">
                             <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
                               Download
                             </a>
                           </div>
-                        )}
-                        <div className="flex items-center">
-                        {!data.technology.includes("Blender") && data.link && (
-                          <>
+                        ) : (
+                          <div className="flex items-center">
                             <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
                               Demo
                             </a>
-                            {data.repo && (
-                              <>
-                                <p className="text-white/80 mx-2">|</p>
-                                <a href={data.repo} target="_blank" className="text-white/80" rel="noreferrer">
-                                  Repo
-                                </a>
-                              </>
-                            )}
-                          </>
+                            <p className="text-white/80 mx-2">|</p>
+                            <div className="flex items-center">
+                              <a href={data.repo} target="_blank" className="text-white/80" rel="noreferrer">
+                                Repo
+                              </a>
+                            </div>
+                          </div>
                         )}
-                        </div>
                       </div>
                       <p className="text-white/80">
                         Tech Stack: {data.technology}
