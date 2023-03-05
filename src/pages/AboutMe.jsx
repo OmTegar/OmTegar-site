@@ -90,8 +90,9 @@ let location = 'Malang, Jawa Timur, Indonesia'
 
 let hobbies = [ 
   "Billiard", 
-  "Baseketball", 
+  "Netwroking", 
   "More programming", 
+  "IT Resource",
   "Game"
 ]
           `}
