@@ -3,7 +3,7 @@ import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
-import { SiAngular } from "@react-icons/all-files/si/SiAngular";
+import { DiNodejsSmall } from "@react-icons/all-files/di/DiNodejsSmall";
 import { SiBlender } from "@react-icons/all-files/si/SiBlender";
 import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
 import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
@@ -90,22 +90,22 @@ export default function Projects() {
             </div>
             <div className="flex items-center gap-6">
               <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "ViteJS" ? "text-white" : "text-[#607B96]"
+                  }`}
+                onClick={() => setFilter("ViteJS")}
+              >
+                <DiNodejsSmall />
+                <span>ViteJS</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-6">
+              <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "AWS" ? "text-white" : "text-[#607B96]"
                   }`}
                 onClick={() => setFilter("AWS")}
               >
                 <SiAmazonaws />
                 <span>AWS</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Angular" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("Angular")}
-              >
-                <SiAngular />
-                <span>Angular</span>
               </button>
             </div>
             <div className="flex items-center gap-6">

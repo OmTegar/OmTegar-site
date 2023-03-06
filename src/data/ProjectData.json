@@ -23,6 +23,14 @@
     "repo" : "https://github.com/OmTegar/company-profile-sektema"
   },
   {
+    "title": "Cuaca Om T",
+    "description": "this is an application that I made to make it easier for me if I want to go home from school, because the distance from school to home is quite far, so I created it to help me.",
+    "technology": "ViteJS",
+    "image": "../projects/cuacaom.webp",
+    "link": "https://cuacaomt.vercel.app",
+    "repo" : "https://github.com/OmTegar/cuaca-omtegar"
+  },
+  {
     "title": "Confab Virtual Conferences",
     "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
     "technology": "NextJS",
