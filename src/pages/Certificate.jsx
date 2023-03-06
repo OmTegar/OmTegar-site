@@ -203,7 +203,7 @@ const Card = ({ data }) => {
                     <div className="flex items-center justify-between">
                       <div>
                         <div className="flex items-center">
-                          <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
+                          <a href={`https://omtegar.me/certificate/${data.link}`} target="_blank" className="text-white/80" rel="noreferrer">
                             View In New Tab
                           </a>
                         </div>
