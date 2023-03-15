@@ -23,4 +23,12 @@
     "link": "command-line-progate.webp",
     "repo" : "#"
   }
+  {
+    "title": "Certificate Digiup",
+    "description": "this is the junior network administrator certificate issued by digiup",
+    "technology": "Networking",
+    "image": "../certificate/digiup.webp",
+    "link": "digiup.webp",
+    "repo" : "#"
+  }
 ]
