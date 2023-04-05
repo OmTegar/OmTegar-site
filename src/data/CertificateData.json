@@ -16,6 +16,14 @@
     "repo" : "#"
   },
   {
+    "title": "Certificate Academy Cloud Foundations",
+    "description": " Certificate Academy Cloud Foundations is a valuable certification for anyone who wants to start a career in cloud computing. The certification covers the fundamental concepts of cloud computing, including virtualization, storage, networking, and security. It provides a good foundation for understanding the different cloud service models, deployment models, and vendor-specific solutions.",
+    "technology": "CloudComputing",
+    "image": "../certificate/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230405-28-ppaif9.webp",
+    "link": "AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230405-28-ppaif9.webp",
+    "repo" : "#"
+  },
+  {
     "title": "Certificate Progate CLI",
     "description": "this is a command line study completion certificate from progate",
     "technology": "Programing",

@@ -1,6 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { FaNetworkWired } from "@react-icons/all-files/fa/FaNetworkWired";
 import { FaCode } from "@react-icons/all-files/fa/FaCode";
+import { FaAws } from "@react-icons/all-files/fa/FaAws";
 import { GiLaurelCrown } from "@react-icons/all-files/gi/GiLaurelCrown";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { motion } from "framer-motion";
@@ -74,6 +75,16 @@ export default function Projects() {
                 <span>Programing</span>
               </button>
             </div>
+            <div className="flex items-center gap-6">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "CloudComputing" ? "text-white" : "text-[#607B96]"
+                  }`}
+                onClick={() => setFilter("CloudComputing")}
+              >
+                <FaAws />
+                <span>Cloud Computing</span>
+              </button>
+            </div>
           </Transition>
         </div>
 
@@ -112,6 +123,9 @@ const Card = ({ data }) => {
     }
     if (value.includes("Networking")) {
       return <FaNetworkWired />;
+    }
+    if (value.includes("CloudComputing")) {
+      return <FaAws />;
     }
   }
 
