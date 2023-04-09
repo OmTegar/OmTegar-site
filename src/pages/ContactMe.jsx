@@ -249,7 +249,7 @@ function Contacts() {
               <span>+6281233219130</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/tegar-priandika-4233a7266/"
+              href="www.linkedin.com/in/omtegar/"
               className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
