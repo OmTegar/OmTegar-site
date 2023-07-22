@@ -3,7 +3,6 @@ import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
-import { DiNodejsSmall } from "@react-icons/all-files/di/DiNodejsSmall";
 import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
 import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
 import { motion } from "framer-motion";
@@ -89,16 +88,6 @@ export default function Projects() {
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "ViteJS" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("ViteJS")}
-              >
-                <DiNodejsSmall />
-                <span>ViteJS</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "AWS" ? "text-white" : "text-[#607B96]"
                   }`}
                 onClick={() => setFilter("AWS")}
@@ -148,6 +137,9 @@ const Card = ({ data }) => {
     }
     if (value.includes("HTML")) {
       return <AiFillHtml5 />;
+    }
+    if (value.includes("AWS")) {
+      return <SiAmazonaws />;
     }
   }
 
@@ -238,15 +230,15 @@ const Card = ({ data }) => {
                     <p className="mb-2.5 text-white/80">{data.description}</p>
                     <div className="flex items-center justify-between">
                       <div>
-                        {data.technology.includes("Blender") && data.link && (
+                        {data.technology.includes("AWS") && data.link && (
                           <div className="flex items-center">
                             <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
-                              Download
+                              View In Youtube
                             </a>
                           </div>
                         )}
                         <div className="flex items-center">
-                        {!data.technology.includes("Blender") && data.link && (
+                        {!data.technology.includes("AWS") && data.link && (
                           <>
                             <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
                               Demo
