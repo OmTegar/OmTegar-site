@@ -8,6 +8,14 @@
     "repo": "#"
   },
   {
+    "title": "Certificate Sirkuit Karate INKANAS 2018 Malang Raya",
+    "description": "this is a certificate of participation in the INKANAS 2018 Malang Raya Karate Circuit held by the Malang Raya Karate Committee.",
+    "technology": "Sports",
+    "image": "../certificate/SERTIFIKAT_KOMITE-KARATE-2018.webp",
+    "link": "SERTIFIKAT_KOMITE-KARATE-2018.webp",
+    "repo" : "#"
+  },
+  {
     "title": "Certificate Telkom Indonesia",
     "description": "my first certificate hehe, a certification test or level increase held by the Telkom Indonesia educational foundation.",
     "technology": "Networking",
@@ -37,6 +45,14 @@
     "technology": "Networking",
     "image": "../certificate/digiup.webp",
     "link": "digiup.webp",
+    "repo" : "#"
+  },
+  {
+    "title": "Certificate Moklet Idea Business",
+    "description": "this is a certificate of participation in the Moklet Idea Business competition held by SMK Telkom Malang",
+    "technology": "BusinessIdeas",
+    "image": "../certificate/SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp",
+    "link": "SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp",
     "repo" : "#"
   }
 ]

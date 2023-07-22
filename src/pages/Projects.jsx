@@ -4,7 +4,6 @@ import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
 import { DiNodejsSmall } from "@react-icons/all-files/di/DiNodejsSmall";
-import { SiBlender } from "@react-icons/all-files/si/SiBlender";
 import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
 import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
 import { motion } from "framer-motion";
@@ -108,16 +107,6 @@ export default function Projects() {
                 <span>AWS</span>
               </button>
             </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Blender" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("Blender")}
-              >
-                <SiBlender />
-                <span>Blender</span>
-              </button>
-            </div>
           </Transition>
         </div>
 
@@ -153,9 +142,6 @@ const Card = ({ data }) => {
   function generateIcon(value) {
     if (value.includes("NextJS")) {
       return <SiNextDotJs />;
-    }
-    if (value.includes("Blender")) {
-      return <SiBlender />;
     }
     if (value.includes("ReactJS")) {
       return <GrReactjs />;

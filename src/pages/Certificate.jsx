@@ -1,9 +1,9 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { FaNetworkWired } from "@react-icons/all-files/fa/FaNetworkWired";
-import { FaCode } from "@react-icons/all-files/fa/FaCode";
-import { FaAws } from "@react-icons/all-files/fa/FaAws";
-import { GiLaurelCrown } from "@react-icons/all-files/gi/GiLaurelCrown";
-import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
+import { FaNetworkWired, FaCode, FaAws } from "react-icons/fa";
+import { GiLaurelCrown } from "react-icons/gi";
+import { GoTriangleDown } from "react-icons/go";
+import { MdOutlineSportsGymnastics } from "react-icons/md";
+import { GiIdea } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
 import datas from "../data/CertificateData.json";
@@ -11,6 +11,20 @@ import datas from "../data/CertificateData.json";
 export default function Projects() {
   const [filter, setFilter] = useState("all");
   const [project, setProject] = useState(true);
+
+  const viewCertificateText = "View Certificate";
+
+  function generateIcon(value) {
+    const iconMapping = {
+      Programing: <FaCode />,
+      Networking: <FaNetworkWired />,
+      CloudComputing: <FaAws />,
+      BusinessIdeas: <GiIdea />,
+      Sports: <MdOutlineSportsGymnastics />,
+    };
+
+    return iconMapping[value] || null;
+  }
   return (
     <motion.div
       className="h-full relative"
@@ -29,7 +43,7 @@ export default function Projects() {
           <span>Certificates</span>
         </button>
         <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter} Certificates
+          {filter === "all" ? "All Certificates" : `${filter} Certificates`}
         </div>
       </div>
 
@@ -47,8 +61,9 @@ export default function Projects() {
           >
             <div className="flex items-center gap-6 ">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full text-left ${filter === "all" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full text-left ${
+                  filter === "all" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("all")}
               >
                 <GiLaurelCrown />
@@ -57,32 +72,57 @@ export default function Projects() {
             </div>
             <div className="flex items-center gap-6 ">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Networking" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "Networking" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("Networking")}
               >
-                <FaNetworkWired />
+                {generateIcon("Networking")}
                 <span>Networking</span>
               </button>
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "Programing" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "Programing" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("Programing")}
               >
-                <FaCode />
+                {generateIcon("Programing")}
                 <span>Programing</span>
               </button>
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "CloudComputing" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "CloudComputing" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("CloudComputing")}
               >
-                <FaAws />
+                {generateIcon("CloudComputing")}
                 <span>Cloud Computing</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-6">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "BusinessIdeas" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("BusinessIdeas")}
+              >
+                {generateIcon("BusinessIdeas")}
+                <span>Business Ideas</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-6">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "Sports" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("Sports")}
+              >
+                {generateIcon("Sports")}
+                <span>Sports</span>
               </button>
             </div>
           </Transition>
@@ -126,6 +166,12 @@ const Card = ({ data }) => {
     }
     if (value.includes("CloudComputing")) {
       return <FaAws />;
+    }
+    if (value.includes("BusinessIdeas")) {
+      return <GiIdea />;
+    }
+    if (value.includes("Sports")) {
+      return <MdOutlineSportsGymnastics />;
     }
   }
 
@@ -217,7 +263,12 @@ const Card = ({ data }) => {
                     <div className="flex items-center justify-between">
                       <div>
                         <div className="flex items-center">
-                          <a href={`https://omtegar.me/certificate/${data.link}`} target="_blank" className="text-white/80" rel="noreferrer">
+                          <a
+                            href={`https://omtegar.me/certificate/${data.link}`}
+                            target="_blank"
+                            className="text-white/80"
+                            rel="noreferrer"
+                          >
                             View In New Tab
                           </a>
                         </div>
@@ -226,7 +277,6 @@ const Card = ({ data }) => {
                         Certificate Type : {data.technology}
                       </p>
                     </div>
-
                   </article>
                 </Dialog.Panel>
               </Transition.Child>
