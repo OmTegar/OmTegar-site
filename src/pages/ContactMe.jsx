@@ -4,7 +4,6 @@ import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrLinkedinOption } from "@react-icons/all-files/gr/GrLinkedinOption";
-// import { HiExternalLink } from "@react-icons/all-files/hi/HiExternalLink";
 import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube";
 import { ImSteam } from "@react-icons/all-files/im/ImSteam";
 import { MdCall } from "@react-icons/all-files/md/MdCall";
@@ -42,7 +41,6 @@ export default function ContactMe() {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoader(true);
-
     emailjs
       .send(
         process.env.REACT_APP_EMAIL_SERVICE,
@@ -59,7 +57,7 @@ export default function ContactMe() {
         setShowNotif(true);
         setTimeout(() => setShowNotif(false), 3000);
         formRef.current.reset();
-      });
+      })
   };
 
   return (
@@ -128,7 +126,7 @@ export default function ContactMe() {
                       name="message"
                       rows="4"
                       className="bg-[#011221] rounded-lg border-[#1E2D3D]  focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
-                      placeholder="Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"
+                      placeholder="Hey! Just checked your website and it looks awesome! Also, I checked your articles on Medium. Learned a few nice tips. Thanks!"
                       autoComplete="off"
                       required
                       onChange={(e) => {
