@@ -12,8 +12,6 @@ export default function Projects() {
   const [filter, setFilter] = useState("all");
   const [project, setProject] = useState(true);
 
-  const viewCertificateText = "View Certificate";
-
   function generateIcon(value) {
     const iconMapping = {
       Programing: <FaCode />,
