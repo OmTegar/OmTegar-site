@@ -1,5 +1,13 @@
 [
   {
+    "title": "Uji Kemahiran Berbahasa Indonesia ( UKBI )",
+    "description": "this is my certificate when I took part in the UKBI test held by the Indonesian Ministry of Education and Culture.",
+    "technology": "school",
+    "image": "../certificate/UKBI_TEGAR-DITO-PRIANDIKA_SMK-TELKOM-MLG.webp",
+    "link": "UKBI_TEGAR-DITO-PRIANDIKA_SMK-TELKOM-MLG.webp",
+    "repo": "#"
+  },
+  {
     "title": "Certificate Integer Gen 4",
     "description": "this is my certificate when I took part in the national tkj pocket tracker competition held by UPG / ganesha education university.",
     "technology": "Networking",

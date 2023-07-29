@@ -2,7 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { FaNetworkWired, FaCode, FaAws } from "react-icons/fa";
 import { GiLaurelCrown } from "react-icons/gi";
 import { GoTriangleDown } from "react-icons/go";
-import { MdOutlineSportsGymnastics } from "react-icons/md";
+import { MdOutlineSportsGymnastics, MdSchool } from "react-icons/md";
 import { GiIdea } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
@@ -19,6 +19,7 @@ export default function Projects() {
       CloudComputing: <FaAws />,
       BusinessIdeas: <GiIdea />,
       Sports: <MdOutlineSportsGymnastics />,
+      school: <MdSchool />,
     };
 
     return iconMapping[value] || null;
@@ -90,6 +91,19 @@ export default function Projects() {
                 <span>Programing</span>
               </button>
             </div>
+
+            <div className="flex items-center gap-6">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "school" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("school")}
+              >
+                {generateIcon("school")}
+                <span>School</span>
+              </button>
+            </div>
+
             <div className="flex items-center gap-6">
               <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
@@ -101,6 +115,7 @@ export default function Projects() {
                 <span>Cloud Computing</span>
               </button>
             </div>
+
             <div className="flex items-center gap-6">
               <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
@@ -170,6 +185,9 @@ const Card = ({ data }) => {
     }
     if (value.includes("Sports")) {
       return <MdOutlineSportsGymnastics />;
+    }
+    if (value.includes("school")) {
+      return <MdSchool />;
     }
   }
 
