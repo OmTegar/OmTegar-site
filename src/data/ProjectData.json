@@ -31,13 +31,6 @@
     "repo": "https://github.com/OmTegar/react-film"
   },
   {
-    "title": "Arve's Personal Site",
-    "description": "Websitenya bilal dah",
-    "technology": "NextJS",
-    "image": "../projects/bilal-arve.webp",
-    "link": "https://bilal-arve.netlify.app/"
-  },
-  {
     "title": "Tutorial Webserver untuk Aplikasi CRUD dengan AWS - Ep. 2",
     "description": "Tutorial konfigurasi Web Server menggunakan layanan Amazon AWS. Ikuti langkah-langkahnya untuk membuat aplikasi CRUD!.",
     "technology": "AWS",
@@ -66,26 +59,6 @@
     "technology": "AWS",
     "image": "../projects/aws3.webp",
     "link": "https://youtu.be/szwSb--ZddY"
-  },
-  {
-    "title": "Confab Virtual Conferences",
-    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
-    "technology": "NextJS",
-    "image": "../projects/confab.webp",
-    "link": "https://confab-omega.vercel.app/"
-  },
-  {
-    "title": "News Site",
-    "description": "iseng ae om",
-    "technology": "ReactJS",
-    "image": "../projects/news-site.webp"
-  },
-  {
-    "title": "Finsweet Landing Page",
-    "description": "Praesent ac rhoncus tortor. Proin et interdum libero. Vestibulum ac dui ullamcorper, porta odio sed, ornare quam. Mauris tempor molestie felis non pharetra. Donec nec nisi sit amet libero aliquam varius eu quis erat. Ut varius sagittis urna, non interdum nisl fringilla semper. Morbi tristique sodales eros quis cursus. Pellentesque in euismod lorem. Morbi facilisis nunc eu odio bibendum tempor. Nulla in orci et ante dignissim aliquam non id metus. Integer a vestibulum nunc, at placerat ex. Nam non metus placerat, laoreet ante eu, interdum magna. Nunc lacinia ipsum tortor, at malesuada massa egestas lobortis. Phasellus dictum dui justo, pretium eleifend orci posuere sit amet.",
-    "technology": "NextJS",
-    "image": "../projects/finsweet.webp",
-    "link": "https://finsweet-nu.vercel.app/"
   },
   {
     "title": "Mini Games Basics V1",
@@ -117,27 +90,6 @@
     "image": "../projects/react-film.webp",
     "link": "https://react-movie-flax.vercel.app/",
     "repo" : "https://github.com/OmTegar/react-movie.git"
-  },
-  {
-    "title": "Sistem Kontrol Laboratory Site",
-    "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
-    "technology": "NextJS",
-    "image": "../projects/siskon-rev.webp",
-    "link": "https://siskon-rev.vercel.app/"
-  },
-  {
-    "title": "Travel Awal",
-    "description": "A travel site",
-    "technology": "NextJS",
-    "image": "../projects/travelawal.webp",
-    "link": "https://www.travelawal.com/"
-  },
-  {
-    "title": "NFT Landing Page",
-    "description": "Sliced",
-    "technology": "HTML",
-    "image": "../projects/nft-landing.webp",
-    "link": "https://nft-wisnu.netlify.app/"
   },
   {
     "title": "Konfigurasi Load Balancing & Auto Scaling di AWS - Ep. 5",
