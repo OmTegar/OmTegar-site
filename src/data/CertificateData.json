@@ -3,7 +3,7 @@
     "title": "Network Engineer / Junior Network Administrator",
     "description": "this is a certificate of completion of the network engineer / junior network administrator course held by BNSP ( Badan Nasional Sertifikasi Profesi ).",
     "technology": ["Networking", "school"],
-    "image": "../certificate/BNSP_JUNIOR-NETWORK-ADMIN.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/certificate/BNSP_JUNIOR-NETWORK-ADMIN.webp",
     "link": "BNSP_JUNIOR-NETWORK-ADMIN.webp"
   },
   {
