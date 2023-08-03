@@ -3,21 +3,21 @@
     "title": "Tutorial Webserver untuk Aplikasi CRUD dengan AWS - Ep. 1",
     "description": "Tutorial praktikum konfigurasi Web Server menggunakan layanan Amazon AWS. Selamat menonton!",
     "technology": "AWS",
-    "image": "../projects/aws1.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/aws1.webp",
     "link": "https://youtu.be/MtGRNftH-OY"
   },
   {
     "title": "Tools Auto Configuration Project (TACP) ",
     "description": "This is a tool that I made to make it easier for me to configure the project that I will make, so I don't need to configure it manually, I just need to run the tool and the project will be configured automatically.",
     "technology": "BASH",
-    "image": "../projects/TACP-V1.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/TACP-V1.webp",
     "link": "https://github.com/OmTegar/TACP"
   },
   {
     "title": "OmTegar Personal Website V1",
     "description": "My profile website first generation in 2022, now my website profile is in the second generation in 2023.",
     "technology": "HTML",
-    "image": "../projects/personal-web-v1.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/personal-web-v1.webp",
     "link": "https://my-company-profile-alpha.vercel.app/",
     "repo": "https://github.com/OmTegar/my-company-profile"
   },
@@ -25,7 +25,7 @@
     "title": "catfish Autodetail",
     "description": "This is a website that I made for my friend's business, namely catfishautodetail, this website is made using the CMS application.",
     "technology": "Wordpress",
-    "image": "../projects/catfishautodetail.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/catfishautodetail.webp",
     "link": "https://catfishautodetail.id/",
     "repo": "#"
   },
@@ -33,14 +33,14 @@
     "title": "Super Mario Bros Game With Python",
     "description": "This is a game that I made using the python programming language, this game is made using the pygame library.",
     "technology": "Python",
-    "image": "../projects/Super-Mario.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/Super-Mario.webp",
     "link": "https://github.com/OmTegar/super-mario-python"
   },
   {
     "title": "tdfilm Streaming Website",
     "description": "This is a website that I made for my friend's business, namely tdfilm, this website is made using the React JS language and is made using the bootstrap studio application.",
     "technology": "ReactJS",
-    "image": "../projects/tdfilm-vercel-app.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/tdfilm-vercel-app.webp",
     "link": "https://tdfilm.vercel.app/",
     "repo": "https://github.com/OmTegar/react-film"
   },
@@ -48,28 +48,28 @@
     "title": "Tutorial Webserver untuk Aplikasi CRUD dengan AWS - Ep. 2",
     "description": "Tutorial konfigurasi Web Server menggunakan layanan Amazon AWS. Ikuti langkah-langkahnya untuk membuat aplikasi CRUD!.",
     "technology": "AWS",
-    "image": "../projects/aws2.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/aws2.webp",
     "link": "https://youtu.be/EeOu-E0hhlE"
   },
   {
     "title": "Tools Auto Configuration Project (TACP-V2) ",
     "description": "This is a tool that I made to make it easier for me to configure the project that I will make, so I don't need to configure it manually, I just need to run the tool and the project will be configured automatically.",
     "technology": "Python",
-    "image": "../projects/TACP-V2.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/TACP-V2.webp",
     "link": "https://github.com/OmTegar/TACP-V2"
   },
   {
     "title": "daily health check",
     "description": "This is a tool that I made to make it easier for me to do daily health checks, so I don't need to fill in the form manually, I just need to run the tool and the form will be filled in automatically.",
     "technology": "Python",
-    "image": "../projects/daily-health-check-python-script.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/daily-health-check-python-script.webp",
     "link": "https://github.com/OmTegar/daily-health-check-python-script"
   },
   {
     "title": "Sektema Company Profile",
     "description": "This is a free Figma template brought to you by the Flowbase Team! Copy the template to your dashboard and customise it in seconds for your next project! If you like our content, check out more at flowbase.co and follow us on Twitter.",
     "technology": "HTML",
-    "image": "../projects/sektema.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/sektema.webp",
     "link": "https://company-profile-sektema.vercel.app/",
     "repo" : "https://github.com/OmTegar/company-profile-sektema"
   },
@@ -77,7 +77,7 @@
     "title": "Cuaca Om T",
     "description": "this is an application that I made to make it easier for me if I want to go home from school, because the distance from school to home is quite far, so I created it to help me.",
     "technology": "ReactJS",
-    "image": "../projects/cuacaom.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/cuacaom.webp",
     "link": "https://cuacaomt.vercel.app",
     "repo" : "https://github.com/OmTegar/cuaca-omtegar"
   },
@@ -85,14 +85,14 @@
     "title": "Membuat Webserver dengan AutoPilot di AWS 😈 - Ep. 3",
     "description": "Pelajari cara membuat Web Server menggunakan AutoPilot di Amazon Web Services. Saksikan sekarang!",
     "technology": "AWS",
-    "image": "../projects/aws3.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/aws3.webp",
     "link": "https://youtu.be/szwSb--ZddY"
   },
   {
     "title": "Mini Games Basics V1",
     "description": "This is a game batu gunting kertas that I applied in the form of a website application so that it can be played in the browser",
     "technology": "HTML",
-    "image": "../projects/game1.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/game1.webp",
     "link": "https://mini-games-html-css-js-basic-ecru.vercel.app/",
     "repo" : "https://github.com/OmTegar/mini-games-html-css-js-basic"
   },
@@ -100,7 +100,7 @@
     "title": "Bootstrap studio",
     "description": "Test Template By Bootstrap Studio",
     "technology": "HTML",
-    "image": "../projects/bootstrap-studio.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/bootstrap-studio.webp",
     "link": "https://test-bootstrap-studio.vercel.app/",
     "repo" : "https://github.com/OmTegar/test-bootstrap-studio"
   },
@@ -108,14 +108,14 @@
     "title": "Konfigurasi Load Balancing & Auto Scaling di AWS - Ep. 4",
     "description": "Pelajari cara mengonfigurasi Load Balancing, Auto Scaling, dan Rsync EFS di EC2 Amazon Web Services. Tonton sekarang!.",
     "technology": "AWS",
-    "image": "../projects/aws4.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/aws4.webp",
     "link": "https://youtu.be/JmUMBKs3Y0c"
   },
   {
     "title": "React Movie Trailer",
     "description": "this is an application where we can view the movie database and we can watch the trailers using the API from https://themoviedb.org",
     "technology": "ReactJS",
-    "image": "../projects/react-film.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/react-film.webp",
     "link": "https://react-movie-flax.vercel.app/",
     "repo" : "https://github.com/OmTegar/react-movie.git"
   },
@@ -123,7 +123,7 @@
     "title": "Konfigurasi Load Balancing & Auto Scaling di AWS - Ep. 5",
     "description": "Ikuti tutorial konfigurasi Load Balancing, Auto Scaling, dan Rsync EFS di EC2 Amazon Web Services. Jangan lewatkan!.",
     "technology": "AWS",
-    "image": "../projects/aws5.webp",
+    "image": "https://omtegar-site.sgp1.cdn.digitaloceanspaces.com/projects/aws5.webp",
     "link": "https://youtu.be/p7ZXcWebluE"
   }
 ]
