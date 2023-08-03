@@ -49,7 +49,11 @@ export default function Projects() {
           <span>Certificates</span>
         </button>
         <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter === "all" ? "All Certificates" : `${filter} Certificates`}
+          {filter === "all"
+            ? `All Certificates (${datas.length})`
+            : `${filter} Certificates (${
+                datas.filter((data) => data.technology.includes(filter)).length
+              })`}
         </div>
       </div>
 
@@ -217,7 +221,7 @@ const Card = ({ data }) => {
                   className="bg-[#86E1F9] p-1 rounded-md"
                   key={index}
                   style={{
-                    marginRight: index < technology.length - 1 ? "4px" : "0"
+                    marginRight: index < technology.length - 1 ? "4px" : "0",
                   }}
                 >
                   {generateIcon(tech)}

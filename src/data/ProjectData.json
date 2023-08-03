@@ -7,6 +7,13 @@
     "link": "https://youtu.be/MtGRNftH-OY"
   },
   {
+    "title": "Tools Auto Configuration Project (TACP) ",
+    "description": "This is a tool that I made to make it easier for me to configure the project that I will make, so I don't need to configure it manually, I just need to run the tool and the project will be configured automatically.",
+    "technology": "BASH",
+    "image": "../projects/TACP-V1.webp",
+    "link": "https://github.com/OmTegar/TACP"
+  },
+  {
     "title": "OmTegar Personal Website V1",
     "description": "My profile website first generation in 2022, now my website profile is in the second generation in 2023.",
     "technology": "HTML",
@@ -23,6 +30,13 @@
     "repo": "#"
   },
   {
+    "title": "Super Mario Bros Game With Python",
+    "description": "This is a game that I made using the python programming language, this game is made using the pygame library.",
+    "technology": "Python",
+    "image": "../projects/Super-Mario.webp",
+    "link": "https://github.com/OmTegar/super-mario-python"
+  },
+  {
     "title": "tdfilm Streaming Website",
     "description": "This is a website that I made for my friend's business, namely tdfilm, this website is made using the React JS language and is made using the bootstrap studio application.",
     "technology": "ReactJS",
@@ -36,6 +50,20 @@
     "technology": "AWS",
     "image": "../projects/aws2.webp",
     "link": "https://youtu.be/EeOu-E0hhlE"
+  },
+  {
+    "title": "Tools Auto Configuration Project (TACP-V2) ",
+    "description": "This is a tool that I made to make it easier for me to configure the project that I will make, so I don't need to configure it manually, I just need to run the tool and the project will be configured automatically.",
+    "technology": "Python",
+    "image": "../projects/TACP-V2.webp",
+    "link": "https://github.com/OmTegar/TACP-V2"
+  },
+  {
+    "title": "daily health check",
+    "description": "This is a tool that I made to make it easier for me to do daily health checks, so I don't need to fill in the form manually, I just need to run the tool and the form will be filled in automatically.",
+    "technology": "Python",
+    "image": "../projects/daily-health-check-python-script.webp",
+    "link": "https://github.com/OmTegar/daily-health-check-python-script"
   },
   {
     "title": "Sektema Company Profile",

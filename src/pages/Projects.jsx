@@ -3,14 +3,14 @@ import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
-import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
 import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
+import { SiGnubash, SiPython } from "react-icons/si";
 import datas from "../data/ProjectData.json";
 
 export default function Projects() {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("All");
   const [project, setProject] = useState(true);
   return (
     <motion.div
@@ -30,7 +30,14 @@ export default function Projects() {
           <span>projects</span>
         </button>
         <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter} projects
+          {filter === "All" ? (
+            <>All Projects ({datas.length})</>
+          ) : (
+            <>
+              {filter} projects (
+              {datas.filter((data) => data.technology === filter).length})
+            </>
+          )}
         </div>
       </div>
 
@@ -48,9 +55,10 @@ export default function Projects() {
           >
             <div className="flex items-center gap-6 ">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full text-left ${filter === "all" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("all")}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full text-left ${
+                  filter === "All" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("All")}
               >
                 <BsFiles />
                 <span>All Projects</span>
@@ -58,8 +66,9 @@ export default function Projects() {
             </div>
             <div className="flex items-center gap-6 ">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "HTML" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "HTML" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("HTML")}
               >
                 <AiFillHtml5 />
@@ -68,18 +77,20 @@ export default function Projects() {
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "NextJS" ? "text-white" : "text-[#607B96]"
-                  }`}
-                onClick={() => setFilter("NextJS")}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "Python" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("Python")}
               >
-                <SiNextDotJs />
-                <span>NextJS</span>
+                <SiPython />
+                <span>Python</span>
               </button>
             </div>
             <div className="flex items-center gap-6 ">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "ReactJS" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "ReactJS" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("ReactJS")}
               >
                 <GrReactjs />
@@ -88,12 +99,24 @@ export default function Projects() {
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${filter === "AWS" ? "text-white" : "text-[#607B96]"
-                  }`}
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "AWS" ? "text-white" : "text-[#607B96]"
+                }`}
                 onClick={() => setFilter("AWS")}
               >
                 <SiAmazonaws />
                 <span>AWS</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-6">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "AWS" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("BASH")}
+              >
+                <SiGnubash />
+                <span>BASH</span>
               </button>
             </div>
           </Transition>
@@ -101,7 +124,7 @@ export default function Projects() {
 
         <div className="lg:col-span-10 md:col-span-9 col-span-full flex items-start justify-center lg:p-16 md:p-8 p-4 overflow-y-auto scrollbar-none">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 h-max w-full">
-            {filter === "all" ? (
+            {filter === "All" ? (
               datas.map((data, index) => {
                 return <Card data={data} key={index} />;
               })
@@ -129,8 +152,8 @@ const Card = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function generateIcon(value) {
-    if (value.includes("NextJS")) {
-      return <SiNextDotJs />;
+    if (value.includes("Python")) {
+      return <SiPython />;
     }
     if (value.includes("ReactJS")) {
       return <GrReactjs />;
@@ -140,6 +163,9 @@ const Card = ({ data }) => {
     }
     if (value.includes("AWS")) {
       return <SiAmazonaws />;
+    }
+    if (value.includes("BASH")) {
+      return <SiGnubash />;
     }
   }
 
@@ -230,36 +256,58 @@ const Card = ({ data }) => {
                     <p className="mb-2.5 text-white/80">{data.description}</p>
                     <div className="flex items-center justify-between">
                       <div>
-                        {data.technology.includes("AWS") && data.link && (
+                        {data.link && (
                           <div className="flex items-center">
-                            <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
-                              View In Youtube
-                            </a>
-                          </div>
-                        )}
-                        <div className="flex items-center">
-                        {!data.technology.includes("AWS") && data.link && (
-                          <>
-                            <a href={data.link} target="_blank" className="text-white/80" rel="noreferrer">
-                              Demo
-                            </a>
-                            {data.repo && (
+                            {data.technology.includes("AWS") ? (
+                              <a
+                                href={data.link}
+                                target="_blank"
+                                className="text-white/80"
+                                rel="noreferrer"
+                              >
+                                View In Youtube
+                              </a>
+                            ) : data.technology.includes("BASH") ? (
+                              <a
+                                href={data.link}
+                                target="_blank"
+                                className="text-white/80"
+                                rel="noreferrer"
+                              >
+                                Go to Github
+                              </a>
+                            ) : (
                               <>
-                                <p className="text-white/80 mx-2">|</p>
-                                <a href={data.repo} target="_blank" className="text-white/80" rel="noreferrer">
-                                  Repo
+                                <a
+                                  href={data.link}
+                                  target="_blank"
+                                  className="text-white/80"
+                                  rel="noreferrer"
+                                >
+                                  Demo
                                 </a>
+                                {data.repo && (
+                                  <>
+                                    <p className="text-white/80 mx-2">|</p>
+                                    <a
+                                      href={data.repo}
+                                      target="_blank"
+                                      className="text-white/80"
+                                      rel="noreferrer"
+                                    >
+                                      Repo
+                                    </a>
+                                  </>
+                                )}
                               </>
                             )}
-                          </>
+                          </div>
                         )}
-                        </div>
                       </div>
                       <p className="text-white/80">
                         Tech Stack: {data.technology}
                       </p>
                     </div>
-
                   </article>
                 </Dialog.Panel>
               </Transition.Child>
