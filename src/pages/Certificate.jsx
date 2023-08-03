@@ -22,8 +22,15 @@ export default function Projects() {
       school: <MdSchool />,
     };
 
-    return iconMapping[value] || null;
+    if (Array.isArray(value)) {
+      // Jika teknologi adalah array, ambil ikon dari elemen pertama (misalnya, "Networking" -> FaNetworkWired)
+      return iconMapping[value[0]] || null;
+    } else {
+      // Jika teknologi adalah string tunggal, ambil ikon berdasarkan string tersebut
+      return iconMapping[value] || null;
+    }
   }
+
   return (
     <motion.div
       className="h-full relative"
@@ -144,20 +151,16 @@ export default function Projects() {
         <div className="lg:col-span-10 md:col-span-9 col-span-full flex items-start justify-center lg:p-16 md:p-8 p-4 overflow-y-auto scrollbar-none">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 h-max w-full">
             {filter === "all" ? (
-              datas.map((data, index) => {
-                return <Card data={data} key={index} />;
-              })
-            ) : datas.filter((tech) => tech.technology === filter).length ===
-              0 ? (
+              datas.map((data, index) => <Card data={data} key={index} />)
+            ) : datas.filter((tech) => tech.technology.includes(filter))
+                .length === 0 ? (
               <div className="w-full flex items-center justify-center col-span-4 h-full text-white">
                 Not yet, comeback again later!
               </div>
             ) : (
               datas
-                .filter((tech) => tech.technology === filter)
-                .map((data, index) => {
-                  return <Card data={data} key={index} />;
-                })
+                .filter((tech) => tech.technology.includes(filter))
+                .map((data, index) => <Card data={data} key={index} />)
             )}
           </div>
         </div>
@@ -167,7 +170,10 @@ export default function Projects() {
 }
 
 const Card = ({ data }) => {
-  const technology = data.technology.split(/[, ]+/);
+  // Handling untuk Certificate Type dalam bentuk string tunggal
+  const technology = data.technology.includes(", ")
+    ? data.technology.split(", ")
+    : [data.technology];
   const [isOpen, setIsOpen] = useState(false);
 
   function generateIcon(value) {
@@ -204,12 +210,19 @@ const Card = ({ data }) => {
             alt={data.title}
             className="object-cover h-full w-full"
           />
-
           <div>
-            <div className="absolute top-5 right-5 text-lg rounded-[2px] flex gap-2.5">
-              <div className="bg-[#86E1F9] p-1 rounded-md">
-                {generateIcon(technology)}
-              </div>
+            <div className="absolute top-5 right-5 flex">
+              {technology.map((tech, index) => (
+                <div
+                  className="bg-[#86E1F9] p-1 rounded-md"
+                  key={index}
+                  style={{
+                    marginRight: index < technology.length - 1 ? "4px" : "0"
+                  }}
+                >
+                  {generateIcon(tech)}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -290,7 +303,7 @@ const Card = ({ data }) => {
                         </div>
                       </div>
                       <p className="text-white/80">
-                        Certificate Type : {data.technology}
+                        Certificate Type : {data.technology.join(", ")}
                       </p>
                     </div>
                   </article>
