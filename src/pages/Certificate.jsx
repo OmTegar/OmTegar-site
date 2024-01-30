@@ -297,7 +297,7 @@ const Card = ({ data }) => {
                       <div>
                         <div className="flex items-center">
                           <a
-                            href={`https://omtegar-site.sgp1.digitaloceanspaces.com/certificate/${data.link}`}
+                            href={`https://omtegar.me/certificate/${data.link}`}
                             target="_blank"
                             className="text-white/80"
                             rel="noreferrer"
