@@ -3,63 +3,63 @@
     "title": "Network Engineer / Junior Network Administrator",
     "description": "this is a certificate of completion of the network engineer / junior network administrator course held by BNSP ( Badan Nasional Sertifikasi Profesi ).",
     "technology": ["Networking", "school"],
-    "image": "https://omtegar.me/certificate/BNSP_JUNIOR-NETWORK-ADMIN.webp",
+    "image": "https://omtegar.tech/certificate/BNSP_JUNIOR-NETWORK-ADMIN.webp",
     "link": "BNSP_JUNIOR-NETWORK-ADMIN.webp"
   },
   {
     "title": "Uji Kemahiran Berbahasa Indonesia ( UKBI )",
     "description": "this is my certificate when I took part in the UKBI test held by the Indonesian Ministry of Education and Culture.",
     "technology": ["school"],
-    "image": "https://omtegar.me/certificate/UKBI_TEGAR-DITO-PRIANDIKA_SMK-TELKOM-MLG.webp",
+    "image": "https://omtegar.tech/certificate/UKBI_TEGAR-DITO-PRIANDIKA_SMK-TELKOM-MLG.webp",
     "link": "UKBI_TEGAR-DITO-PRIANDIKA_SMK-TELKOM-MLG.webp"
   },
   {
     "title": "Certificate Integer Gen 4",
     "description": "this is my certificate when I took part in the national tkj pocket tracker competition held by UPG / ganesha education university.",
     "technology": ["Networking"],
-    "image": "https://omtegar.me/certificate/tegar-dito-priandika-integer-4.webp",
+    "image": "https://omtegar.tech/certificate/tegar-dito-priandika-integer-4.webp",
     "link": "tegar-dito-priandika-integer-4.webp"
   },
   {
     "title": "Certificate Sirkuit Karate INKANAS 2018 Malang Raya",
     "description": "this is a certificate of participation in the INKANAS 2018 Malang Raya Karate Circuit held by the Malang Raya Karate Committee.",
     "technology": ["Sports"],
-    "image": "https://omtegar.me/certificate/SERTIFIKAT_KOMITE-KARATE-2018.webp",
+    "image": "https://omtegar.tech/certificate/SERTIFIKAT_KOMITE-KARATE-2018.webp",
     "link": "SERTIFIKAT_KOMITE-KARATE-2018.webp"
   },
   {
     "title": "Certificate Telkom Indonesia",
     "description": "my first certificate hehe, a certification test or level increase held by the Telkom Indonesia educational foundation.",
     "technology": ["Networking"],
-    "image": "https://omtegar.me/certificate/SERTIFIKAT-UKL-X-A30-2021_2022-Tegar-Dito-Priandika.webp",
+    "image": "https://omtegar.tech/certificate/SERTIFIKAT-UKL-X-A30-2021_2022-Tegar-Dito-Priandika.webp",
     "link": "SERTIFIKAT-UKL-X-A30-2021_2022-Tegar-Dito-Priandika.webp"
   },
   {
     "title": "Certificate Academy Cloud Foundations",
     "description": " Certificate Academy Cloud Foundations is a valuable certification for anyone who wants to start a career in cloud computing. The certification covers the fundamental concepts of cloud computing, including virtualization, storage, networking, and security. It provides a good foundation for understanding the different cloud service models, deployment models, and vendor-specific solutions.",
     "technology": ["CloudComputing", "Networking"],
-    "image": "https://omtegar.me/certificate/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230405-28-ppaif9.webp",
+    "image": "https://omtegar.tech/certificate/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230405-28-ppaif9.webp",
     "link": "AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230405-28-ppaif9.webp"
   },
   {
     "title": "Certificate Progate CLI",
     "description": "this is a command line study completion certificate from progate",
     "technology": ["Programing"],
-    "image": "https://omtegar.me/certificate/command-line-progate.webp",
+    "image": "https://omtegar.tech/certificate/command-line-progate.webp",
     "link": "command-line-progate.webp"
   },
   {
     "title": "Certificate Digiup",
     "description": "this is the junior network administrator certificate issued by digiup",
     "technology": ["Networking"],
-    "image": "https://omtegar.me/certificate/digiup.webp",
+    "image": "https://omtegar.tech/certificate/digiup.webp",
     "link": "digiup.webp"
   },
   {
     "title": "Certificate Moklet Idea Business",
     "description": "this is a certificate of participation in the Moklet Idea Business competition held by SMK Telkom Malang",
     "technology": ["BusinessIdeas"],
-    "image": "https://omtegar.me/certificate/SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp",
+    "image": "https://omtegar.tech/certificate/SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp",
     "link": "SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp"
   }
 ]
