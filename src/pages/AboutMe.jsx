@@ -132,10 +132,19 @@ function Work({ closeWork }) {
         <CopyBlock
           language={`jsx`}
           text={`// Work Information
-let main_profession = 'Cloud Architect',
-let side_profession = 'Web Developer',
-let school = 'Telkom Malang Vocational High School',
-let employer = 'https://sidigs.com',
+let Main_profession = 'Cloud Architect',
+let Side_profession = 'Web Developer',
+let School_background = 'Telkom Vocational High School Malang',
+let Work_Experience = [
+  "https://sidigs.com - Junior backend Web Developer - Okt 2021 - Mei 2023",
+  "Politeknik Pembangunan Pertanian Malang - Back-end Developer - Agu 2023 - Jun 2024",
+],
+
+// Open Source Projects
+let projects = [
+  "Tools Auto Configuration Project (TACP)",
+  "Tools Auto Configuration Project - Python Based",
+],
 
 // Most important skills
 let languanges = [
@@ -145,7 +154,9 @@ let languanges = [
   "MySQL",
   "Python",
   "JavaScript"
-]
+],
+
+// I believe I have some strengths in certain frameworks.
 let frameworks = [
   "React",
   "Next",

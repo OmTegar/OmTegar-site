@@ -4,6 +4,7 @@ import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
 import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
+import { SiLaravel } from "@react-icons/all-files/si/SiLaravel";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
 import { SiGnubash, SiPython } from "react-icons/si";
@@ -62,6 +63,17 @@ export default function Projects() {
               >
                 <BsFiles />
                 <span>All Projects</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-6 ">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "Laravel" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("Laravel")}
+              >
+                <SiLaravel />
+                <span>Laravel</span>
               </button>
             </div>
             <div className="flex items-center gap-6 ">

@@ -125,5 +125,12 @@
     "technology": "AWS",
     "image": "https://omtegar.tech/projects/aws5.webp",
     "link": "https://youtu.be/p7ZXcWebluE"
+  },
+  {
+    "title": "Web Apps Management Asrama Polbangtan-mlg",
+    "description": "As a Backend Developer and DevOps Engineer in this project, I play an important role in building and optimizing applications designed to facilitate the process of data collection of student attendance, attendance in mandatory activities in the dormitory, and data collection of violations committed by students. My main goal is to create an efficient and reliable system that facilitates the administration of the dormitory environment. I am committed to providing the best technology solutions.",
+    "technology": "Laravel",
+    "image": "https://omtegar.tech/projects/management-asrama-poblangtan.webp",
+    "link": "https://asramapolbangtan-mlg.com/"
   }
 ]
