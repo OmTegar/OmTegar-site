@@ -2,7 +2,7 @@
   {
     "title": "Tutorial Webserver untuk Aplikasi CRUD dengan AWS - Ep. 1",
     "description": "Tutorial praktikum konfigurasi Web Server menggunakan layanan Amazon AWS. Selamat menonton!",
-    "technology": "AWS",
+    "technology": "CloudComputing",
     "image": "https://omtegar.tech/projects/aws1.webp",
     "link": "https://youtu.be/MtGRNftH-OY"
   },
@@ -24,7 +24,7 @@
   {
     "title": "catfish Autodetail",
     "description": "This is a website that I made for my friend's business, namely catfishautodetail, this website is made using the CMS application.",
-    "technology": "Wordpress",
+    "technology": "Laravel",
     "image": "https://omtegar.tech/projects/catfishautodetail.webp",
     "link": "https://catfishautodetail.id/",
     "repo": "#"
@@ -47,7 +47,7 @@
   {
     "title": "Tutorial Webserver untuk Aplikasi CRUD dengan AWS - Ep. 2",
     "description": "Tutorial konfigurasi Web Server menggunakan layanan Amazon AWS. Ikuti langkah-langkahnya untuk membuat aplikasi CRUD!.",
-    "technology": "AWS",
+    "technology": "CloudComputing",
     "image": "https://omtegar.tech/projects/aws2.webp",
     "link": "https://youtu.be/EeOu-E0hhlE"
   },
@@ -84,7 +84,7 @@
   {
     "title": "Membuat Webserver dengan AutoPilot di AWS 😈 - Ep. 3",
     "description": "Pelajari cara membuat Web Server menggunakan AutoPilot di Amazon Web Services. Saksikan sekarang!",
-    "technology": "AWS",
+    "technology": "CloudComputing",
     "image": "https://omtegar.tech/projects/aws3.webp",
     "link": "https://youtu.be/szwSb--ZddY"
   },
@@ -107,7 +107,7 @@
   {
     "title": "Konfigurasi Load Balancing & Auto Scaling di AWS - Ep. 4",
     "description": "Pelajari cara mengonfigurasi Load Balancing, Auto Scaling, dan Rsync EFS di EC2 Amazon Web Services. Tonton sekarang!.",
-    "technology": "AWS",
+    "technology": "CloudComputing",
     "image": "https://omtegar.tech/projects/aws4.webp",
     "link": "https://youtu.be/JmUMBKs3Y0c"
   },
@@ -122,7 +122,7 @@
   {
     "title": "Konfigurasi Load Balancing & Auto Scaling di AWS - Ep. 5",
     "description": "Ikuti tutorial konfigurasi Load Balancing, Auto Scaling, dan Rsync EFS di EC2 Amazon Web Services. Jangan lewatkan!.",
-    "technology": "AWS",
+    "technology": "CloudComputing",
     "image": "https://omtegar.tech/projects/aws5.webp",
     "link": "https://youtu.be/p7ZXcWebluE"
   },

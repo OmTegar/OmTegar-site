@@ -61,5 +61,26 @@
     "technology": ["BusinessIdeas"],
     "image": "https://omtegar.tech/certificate/SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp",
     "link": "SERTIFIKAT_MOKLET-IDEA-CHALLENGE-2023.webp"
+  },
+  {
+    "title": "Certificate Networking",
+    "description": "this is a certificate from certiport and this is my first international certificate",
+    "technology": ["Networking"],
+    "image": "https://omtegar.tech/certificate/Cert926211714789.webp",
+    "link": "Cert926211714789.webp"
+  },
+  {
+    "title": "Certificate English first",
+    "description": "this is a certificate of completion of the English first course",
+    "technology": ["school"],
+    "image": "https://omtegar.tech/certificate/SERTIFIKAT_ENGLIST-FIRST.webp",
+    "link": "SERTIFIKAT_ENGLIST-FIRST.webp"
+  },
+  {
+    "title": "Certificate Cloud Computing",
+    "description": "this certificate is a certification obtained during the cloud computing competency test held by SMK Telkom Malang",
+    "technology": ["CloudComputing", "Networking", "Programing"],
+    "image": "https://omtegar.tech/certificate/SERTIFIKAT-UKK-TEGAR-DITO-PRIANDIKA-XIITKJ5.webp",
+    "link": "SERTIFIKAT-UKK-TEGAR-DITO-PRIANDIKA-XIITKJ5.webp"
   }
 ]

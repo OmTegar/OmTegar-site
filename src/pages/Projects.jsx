@@ -3,7 +3,7 @@ import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
-import { SiAmazonaws } from "@react-icons/all-files/si/SiAmazonaws";
+import { TbCloudCode } from "react-icons/tb";
 import { SiLaravel } from "@react-icons/all-files/si/SiLaravel";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
@@ -112,23 +112,23 @@ export default function Projects() {
             <div className="flex items-center gap-6">
               <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "AWS" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("AWS")}
-              >
-                <SiAmazonaws />
-                <span>AWS</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "AWS" ? "text-white" : "text-[#607B96]"
+                  filter === "BASH" ? "text-white" : "text-[#607B96]"
                 }`}
                 onClick={() => setFilter("BASH")}
               >
                 <SiGnubash />
                 <span>BASH</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-6">
+              <button
+                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "CloudComputing" ? "text-white" : "text-[#607B96]"
+                }`}
+                onClick={() => setFilter("CloudComputing")}
+              >
+                <TbCloudCode />
+                <span>Cloud Computing</span>
               </button>
             </div>
           </Transition>
@@ -173,8 +173,8 @@ const Card = ({ data }) => {
     if (value.includes("HTML")) {
       return <AiFillHtml5 />;
     }
-    if (value.includes("AWS")) {
-      return <SiAmazonaws />;
+    if (value.includes("CloudComputing")) {
+      return <TbCloudCode />;
     }
     if (value.includes("BASH")) {
       return <SiGnubash />;
@@ -270,7 +270,7 @@ const Card = ({ data }) => {
                       <div>
                         {data.link && (
                           <div className="flex items-center">
-                            {data.technology.includes("AWS") ? (
+                            {data.technology.includes("CloudComputing") ? (
                               <a
                                 href={data.link}
                                 target="_blank"
