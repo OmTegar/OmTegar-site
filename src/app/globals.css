@@ -1,10 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-fira-code: "Fira Code", monospace;
+
+  --animate-blob: blob 7s infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px #43D9AD, 0 0 20px #43D9AD;
+    }
+
+    to {
+      box-shadow: 0 0 20px #43D9AD, 0 0 30px #86E1F9;
+    }
+  }
+}
+
+/* Custom background image - relying on tailwind.config.js for simpler migration or redefining here? 
+   Tailwind 4 picks up tailwind.config.js automatically. keeping it simple. 
+*/
+
 
 * {
-  font-family: "Fira Code", monospace;
+  font-family: var(--font-fira-code), monospace;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -34,7 +84,15 @@
 }
 
 .custom-size {
-  @apply md:w-[calc(100vw-2.5rem)] md:h-[calc(100vh-2.5rem)] w-[calc(100vw-2rem)] h-[calc(100vh-2rem)];
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+}
+
+@media (min-width: 768px) {
+  .custom-size {
+    width: calc(100vw - 2.5rem);
+    height: calc(100vh - 2.5rem);
+  }
 }
 
 .x-button-snake {
@@ -57,33 +115,35 @@ input[type="checkbox"]:hover {
 }
 
 .react-syntax-highlighter-line-number {
-  @apply text-[#607B96];
+  color: #607B96;
 }
 
 code .token {
-  @apply text-[#607B96] !important;
+  color: #607B96 !important;
 }
 
 .efofCE {
-  @apply bg-transparent p-0 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 
 .efofCE span {
-  @apply bg-transparent !important;
+  background-color: transparent !important;
 }
 
 .sc-bcXHqe.kBPKLM {
-  @apply hidden !important;
+  display: none !important;
 }
 
 .loHkWQ {
-  @apply bg-transparent p-0 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 
 .loHkWQ span {
-  @apply bg-transparent !important;
+  background-color: transparent !important;
 }
 
 .sc-bcXHqe.iCXprV {
-  @apply hidden !important;
+  display: none !important;
 }

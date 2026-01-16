@@ -52,8 +52,9 @@ export default function AboutMe() {
           <SectionCard title="work_experience" icon={<IoLogoJavascript className="text-[#43D9AD]" />}>
             <div className="space-y-8">
               {[
+                { company: "Kuy Group", role: "IT Support & Developer", period: "2024 - NOW" },
                 { company: "Politeknik Pembangunan Pertanian Malang", role: "Back-end Developer", period: "2023 - 2024" },
-                { company: "Sidigs.com", role: "Junior Backend Developer", period: "2021 - 2023" }
+                { company: "Sidigs", role: "Junior Backend Developer", period: "2021 - 2023" }
               ].map((job, i) => (
                 <div key={i} className="relative pl-8 border-l border-white/10 group">
                   <div className="absolute left-[-5px] top-0 w-2.5 h-2.5 rounded-full bg-white/20 group-hover:bg-[#43D9AD] transition-colors"></div>

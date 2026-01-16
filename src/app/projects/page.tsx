@@ -2,7 +2,6 @@
 
 import { Dialog, Transition } from "@headlessui/react";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
-import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GrReactjs } from "@react-icons/all-files/gr/GrReactjs";
 import { TbCloudCode } from "react-icons/tb";
 import { SiLaravel } from "@react-icons/all-files/si/SiLaravel";
@@ -109,6 +108,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
   const generateIcon = (value: string): ReactNode => {
     if (value.includes("Python")) return <SiPython />;
     if (value.includes("ReactJS")) return <GrReactjs />;
+    if (value.includes("Laravel")) return <SiLaravel />;
     if (value.includes("HTML")) return <AiFillHtml5 />;
     if (value.includes("CloudComputing")) return <TbCloudCode />;
     if (value.includes("BASH")) return <SiGnubash />;
