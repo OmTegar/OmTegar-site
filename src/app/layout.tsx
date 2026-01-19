@@ -1,5 +1,3 @@
-"use client";
-
 import { ReactNode } from "react";
 import Layout from "@/components/Layout";
 import "@/app/globals.css";
