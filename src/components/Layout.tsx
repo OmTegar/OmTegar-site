@@ -11,6 +11,7 @@ import { useState, useEffect, ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useSession } from "next-auth/react";
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 interface LayoutProps {
@@ -22,6 +23,7 @@ export default function Layout({ children }: LayoutProps) {
   const [navbar, setNavbar] = useState(false);
   const { height } = useWindowDimensions();
   const pathname = usePathname();
+  const { status } = useSession();
 
   useEffect(() => {
     if (height > 768) {
@@ -78,6 +80,16 @@ export default function Layout({ children }: LayoutProps) {
               >
                 _let's_chat
               </Link>
+
+              {/* Show Dashboard link if logged in */}
+              {status === "authenticated" && (
+                <Link
+                  href="/admin"
+                  className="hidden md:block px-6 py-2 rounded-full text-sm font-bold transition-all bg-[#010810]/50 text-[#43D9AD] border border-[#43D9AD]/30 hover:bg-[#43D9AD]/10"
+                >
+                  _dashboard
+                </Link>
+              )}
 
               <button
                 className="md:hidden text-2xl text-white p-2"
