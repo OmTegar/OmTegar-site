@@ -1,6 +1,6 @@
 {
   "name": "omtegar-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
