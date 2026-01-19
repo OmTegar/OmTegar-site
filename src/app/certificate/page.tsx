@@ -2,7 +2,6 @@
 
 import { Dialog, Transition } from "@headlessui/react";
 import { FaNetworkWired, FaCode, FaAws } from "react-icons/fa";
-import { GiLaurelCrown } from "react-icons/gi";
 import { MdOutlineSportsGymnastics, MdSchool } from "react-icons/md";
 import { GiIdea } from "react-icons/gi";
 import { motion, AnimatePresence } from "framer-motion";

@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import { useSnakeGame } from "../../hooks/useSnakeGame";
+import { useSnakeGame } from "@/features/game/hooks/useSnakeGame";
+import { CANVAS_SIZE, SCALE, SNAKE_START, APPLE_START, SPEED, DIRECTIONS } from "./constants";
 
 interface SnakeProps {
   scoreSnake: (score: number) => void;

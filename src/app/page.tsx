@@ -1,11 +1,10 @@
 "use client";
 
-import { RiCloseLine } from "@react-icons/all-files/ri/RiCloseLine";
 import { VscTriangleUp } from "@react-icons/all-files/vsc/VscTriangleUp";
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
-import Snake from "@/components/snake";
+import Snake from "@/features/game/components";
 
 export default function Home() {
   const [score, setScore] = useState<number>(0);
@@ -57,7 +56,7 @@ export default function Home() {
               // developer.portfolio_v1.0
             </motion.p>
             <h1 className="text-white lg:text-[10rem] md:text-8xl text-6xl font-black leading-none tracking-tighter drop-shadow-[0_0_30px_rgba(67,217,173,0.1)]">
-              OM.<br />TEGAR
+              OM.TEGAR
             </h1>
 
             <div className="mt-8 flex items-center gap-4 text-white/90 lg:text-4xl text-2xl font-medium italic">
@@ -82,7 +81,7 @@ export default function Home() {
           <div className="space-y-6 pt-8 max-w-xl">
             <div className="bg-white/5 border-l-2 border-[#43D9AD] p-6 backdrop-blur-md rounded-r-xl group hover:bg-[#43D9AD]/5 transition-all duration-300">
               <p className="text-[#607B96] text-lg leading-relaxed italic">
-                "Sans"
+                "From infrastructure to interface — I make it work."
               </p>
             </div>
 

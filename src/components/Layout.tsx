@@ -7,7 +7,7 @@ import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
-import React, { useState, useEffect, ReactNode } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,8 +15,6 @@ import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 interface LayoutProps {
   children: ReactNode;
-  setIsNavbar?: (value: string) => void;
-  isNavbar?: string;
 }
 
 export default function Layout({ children }: LayoutProps) {
@@ -60,8 +58,8 @@ export default function Layout({ children }: LayoutProps) {
                     key={link.href}
                     href={link.href}
                     className={`px-4 py-2 rounded-full transition-all text-sm font-medium ${pathname === link.href
-                        ? "bg-white/10 text-white shadow-[0_0_15px_rgba(255,255,255,0.1)]"
-                        : "hover:bg-white/5 hover:text-white"
+                      ? "bg-white/10 text-white shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                      : "hover:bg-white/5 hover:text-white"
                       }`}
                   >
                     {link.label}
@@ -74,8 +72,8 @@ export default function Layout({ children }: LayoutProps) {
               <Link
                 href="/contact-me"
                 className={`hidden md:block px-6 py-2 rounded-full text-sm font-bold transition-all ${pathname === "/contact-me"
-                    ? "bg-[#43D9AD] text-[#010810] shadow-[0_0_20px_rgba(67,217,173,0.4)]"
-                    : "bg-white/10 text-white hover:bg-[#43D9AD] hover:text-[#010810] hover:shadow-[0_0_20px_rgba(67,217,173,0.3)]"
+                  ? "bg-[#43D9AD] text-[#010810] shadow-[0_0_20px_rgba(67,217,173,0.4)]"
+                  : "bg-white/10 text-white hover:bg-[#43D9AD] hover:text-[#010810] hover:shadow-[0_0_20px_rgba(67,217,173,0.3)]"
                   }`}
               >
                 _let's_chat
@@ -125,7 +123,8 @@ export default function Layout({ children }: LayoutProps) {
         </AnimatePresence>
 
         {/* Main Content Area: Re-layout as a clean canvas */}
-        <main className="flex-grow pt-32 pb-24 md:px-12 px-6 max-w-7xl mx-auto w-full flex flex-col overflow-y-auto scrollbar-none">
+        {/* Changed max-w-7xl to max-w-[90%] and added scrollbar hiding utils */}
+        <main className="flex-grow pt-32 pb-24 md:px-12 px-6 max-w-[90%] mx-auto w-full flex flex-col overflow-y-auto scrollbar-none [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
           <AnimatePresence mode="wait">
             <motion.div
               key={pathname}

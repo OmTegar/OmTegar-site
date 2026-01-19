@@ -22,6 +22,9 @@ A modern, high-performance portfolio website built with **Next.js 15**, **TypeSc
 - **Type Safety**: Full TypeScript implementation for robust and maintainable code.
 - **Performance**: Optimized images and server-side rendering benefits via Next.js.
 
+> [!TIP]
+> 📖 **Documentation**: Detailed architecture and feature documentation can be found in the [`docs/`](docs/) directory.
+
 ## 📂 Project Structure
 
 ```text

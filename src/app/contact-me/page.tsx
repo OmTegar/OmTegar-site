@@ -1,18 +1,13 @@
 "use client";
 
-import { emailService, EmailData } from "@/lib/services/EmailService";
-import { Popover, Transition } from "@headlessui/react";
-import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
+import { emailService, EmailData } from "@/features/contact/services/EmailService";
 import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
-import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GrLinkedinOption } from "@react-icons/all-files/gr/GrLinkedinOption";
 import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube";
-import { ImSteam } from "@react-icons/all-files/im/ImSteam";
 import { MdCall } from "@react-icons/all-files/md/MdCall";
 import { MdEmail } from "@react-icons/all-files/md/MdEmail";
 import { motion } from "framer-motion";
-import React, { useRef, useState, FormEvent } from "react";
-import { CopyBlock, nord } from "react-code-blocks";
+import { useRef, useState, FormEvent } from "react";
 
 export default function ContactMe() {
   const d = new Date();

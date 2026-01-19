@@ -1,15 +1,9 @@
 "use client";
 
-import { Popover, Transition } from "@headlessui/react";
-import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
-import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
-import { HiChevronRight } from "@react-icons/all-files/hi/HiChevronRight";
 import { RiFolder3Fill } from "@react-icons/all-files/ri/RiFolder3Fill";
 import { SiMarkdown } from "@react-icons/all-files/si/SiMarkdown";
-import { VscCollapseAll } from "@react-icons/all-files/vsc/VscCollapseAll";
-import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
-import { CopyBlock, nord } from "react-code-blocks";
+import { motion } from "framer-motion";
+import React from "react";
 import gearData from "@/data/GearData.json";
 import { IoLogoJavascript } from "@react-icons/all-files/io5/IoLogoJavascript";
 

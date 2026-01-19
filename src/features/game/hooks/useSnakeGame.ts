@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { useInterval } from "@/components/snake/useInterval";
-import { SnakeEngine, Point } from "@/lib/game/SnakeEngine";
+import { useInterval } from "@/features/game/components/useInterval";
+import { SnakeEngine, Point } from "@/features/game/logic/SnakeEngine";
 import {
     CANVAS_SIZE,
     SNAKE_START,
@@ -10,7 +10,7 @@ import {
     SCALE,
     SPEED,
     DIRECTIONS,
-} from "@/components/snake/constants";
+} from "@/features/game/components/constants";
 
 const engine = new SnakeEngine({
     canvasSize: CANVAS_SIZE as [number, number],
